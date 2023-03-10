@@ -123,23 +123,33 @@ main {
 
 h1 {
     text-align: center;
-    transform: rotate(-5deg);
+    transform: rotate(-4deg);
     text-shadow: 0.125rem 0.125rem 0.125rem grey;
-    padding: 2rem;
-    font-size: 2.5rem;
+    padding: 2.25rem;
+    font-size: 2.75rem;
 }
 
 h2 {
     margin: 2rem 1rem 0 1rem;
-    font-size: 1.5rem;
+    font-size: 2.25rem;
+    color: purple;
+    font-family: robotoslab-regular, rozhaone-regular, josefinslab-regular, ultra-regular, serif;
+    text-shadow: 0.125rem 0.125rem 0.025rem lightgrey;
 }
 
 h3 {
-    font-size: 1.15rem;
+    color: purple;
+    font-family: robotoslab-regular, rozhaone-regular, josefinslab-regular, ultra-regular, serif;
+    font-size: 1.5rem;
+}
+
+p {
+    letter-spacing: 0.0125rem;
+    line-height: 1.5rem;
 }
 
 .highlight{
-    background-color: pink;
+    background-color: purple;
     color: white;
     font-family: ultra-regular, rozhaone-regular, robotoslab-regular, josefinslab-regular, serif;
     padding: 1rem;
@@ -158,25 +168,27 @@ nav {
     border-top: 0.25rem solid black;
     border-bottom: 0.25rem solid black;
     padding-left: 2rem;
+    font-weight: bold;
 }
 
 nav a {
     padding: 1.5rem;
     text-decoration: none;
     font-size: 1.5rem;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    background-color: pink;
+    background-color: rgb(222, 177, 222);
 }
 
 nav a:active {
-    background-color: rgb(194, 142, 151);
+    background-color: rgb(167, 117, 167);
 }
 
 nav a:link, 
 nav a:visited {
-    color: rgb(59, 94, 134);
+    color: rgb(87, 1, 87);
 }
 
 /* Layout ------------------------------------------------------- */
@@ -195,7 +207,7 @@ article {
 .article-image{
     width: 30%;
     float: left;
-    margin: 1rem 1rem 1rem 0;
+    margin: 1rem 1rem 0 0;
 }
 
 .article-image img{
@@ -216,6 +228,11 @@ aside img {
 .expand {
     text-decoration: none;
     font-size: 0.30rem;
+}
+
+aside a:hover {
+    background-color: rgba(128, 0, 128, 0.301);
+    border-radius: 0.5rem;
 }
 
 /* Image bar using grid -------------------------------------------- */
@@ -243,20 +260,21 @@ aside img {
 /* Button --------------------------------------------------------- */
 
 button {
-    border: 0.125rem solid black;
+    border: 0.125rem solid purple;
+    background-color: purple;
+    border-radius: 0.5rem;
+    color: white;
     padding: 1.5rem;
     font-family: ultra-regular, rozhaone-regular, robotoslab-regular, josefinslab-regular, serif;
     font-size: 2rem;
-    background-color: pink;
-    border-radius: 0.25rem;
 }
 
 button:hover {
-    background-color: rgb(194, 142, 151);
+    background-color: rgb(103, 2, 103);
 }
 
 button:active {
-    background-color: rgb(114, 87, 92);
+    background-color: rgb(81, 4, 81);
 }
 
 /* Footer -------------------------------------------------------- */
@@ -266,6 +284,13 @@ footer {
     justify-content: space-between;
     margin-top: 3rem;
     padding: 0 3.25rem;
+    font-size: 0.875rem;
+}
+
+footer a {
+    font-family: josefinslab-regular, robotoslab-regular, rozhaone-regular, serif;
+    color: blue;
+    font-weight: bold;
 }
 
 .attribution {
