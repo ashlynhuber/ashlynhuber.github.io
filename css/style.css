@@ -94,7 +94,7 @@ nav p a {
 
 nav p a:hover,
 figcaption a:hover {
-    color:#495F83;
+    color: white;
     text-decoration:none;
 }
 
